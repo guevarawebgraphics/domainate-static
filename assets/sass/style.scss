@@ -1,0 +1,16 @@
+// Components
+@import "component/global";
+@import "component/typography";
+@import "component/color";
+@import "component/button";
+@import "component/header";
+@import "component/mobile";
+@import "component/footer";
+
+
+// Pages
+@import "pages/home.scss";
+@import "pages/about.scss";
+@import "pages/project-overview.scss";
+@import "pages/project-detail.scss";
+@import "pages/contact.scss";

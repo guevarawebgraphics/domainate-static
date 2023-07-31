@@ -1,0 +1,15 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  line-height: 2; }
+
+.btn {
+  min-width: 150px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px; }
