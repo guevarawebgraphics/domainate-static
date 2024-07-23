@@ -1,14 +1,29 @@
 .page--mastery-certification {
 
     .section--side-bar {
+        // z-index:999999;
+        // position: fixed;
+        .training-header {
+            font-size: 24px !important ;
+            border-bottom: 2px solid #e46021;
+            font-weight:200 !important;
+        }
+
+        .row {
+            margin-left: unset;
+            margin-right: unset;
+        }
+
 
         .sidebar {
             width: 400px;
-            background-color: #e0e0e0;
+            background-color: #e7e7e7;
             padding: 20px 0;
             position: fixed;
             height: 100%;
             max-height: 400px;
+            padding-right:auto;
+            padding-left:auto;
 
             .intro {
                 border-top: solid 2px #ff6600;
@@ -23,6 +38,7 @@
             }
 
             .section {
+                overflow-y: auto;
                 .dropdown {
                     margin-top: 10px;
                     padding: 10px;
@@ -58,54 +74,142 @@
                 }
             }
         }
+
+        
+        .sidebar-accordion--listing {
+            background-color: #e7e7e7;
+            height: 100vh;
+            overflow-y: auto;
+            border-bottom: 1px solid #e46021;
+
+            /* Rotate icon when collapse is shown */
+            .rotate-icon {
+            transition: transform 0.3s ease;
+            }
+
+            .rotate-icon.rotate {
+            transform: rotate(180deg);
+            }
+
+
+
+            .card {
+                .card-header {
+                    padding: unset;
+                }
+
+                .card-body {
+                    
+                    padding: unset !important;
+                    
+                    background-color:#dbdbdb;
+                    transition: 50ms all linear;
+                }
+            }
+
+            ul {
+                margin-bottom: unset;
+                li {
+                    a {
+                        color: $color-accordion !important;
+                        text-decoration: none !important;
+                        display: block;
+                        padding: 20px 25px;
+                        transition: 100ms all linear;
+                        font-weight:400 !important;
+                        font-size:1rem;
+
+                        &:hover {
+                            color: #fff !important;
+                            background-color: rgba(228,96,33, 0.8);
+                        }
+                        &:focus {
+                            color: #fff !important;
+                            background-color: rgba(228,96,33, 0.8);
+                        }
+
+                    }
+                }
+            }
+
+
+            .btn {
+                border: unset;
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 1rem 1.25rem;
+                font-size: 1rem;
+                color: $color-accordion;
+                text-align: left;
+                background-color: #e7e7e7 !important;
+                border: 0;
+                border-radius: 0;
+                overflow-anchor: none;
+                transition: $accordion-transition;
+                text-decoration: none;
+
+                &:hover {
+                    border-bottom: unset;
+                    
+                }
+
+                .collapsed {
+                    border-radius:0;
+                }  
+            }
+        }
+    }
+        
+    .section--mastery-body {
+        // margin-left: 25rem;
+
     }
 
-    .section--mastery-body {
-        margin-left: 25rem;
-        .wrapper {
+    .wrapper {
 
-            .master-body {
-                &__content {
-                    margin: 50px 0;
-                    h1 {
-                        text-align: center;
-                        font-weight: 600;
-                    }
-                    .card {
-                        .card-body {
-                            h5 {
-                                text-align: center;
-                            }
+        .master-body {
+            &__content {
+                margin: 50px 0;
+                h1 {
+                    text-align: center;
+                    font-weight: 600;
+                }
+                .card {
+                    .card-body {
+                        h5 {
+                            text-align: center;
+                        }
 
-                            .video-container {
-                                height: 500px;
+                        .video-container {
+                            height: 500px;
+                            width: 100%;
+                            margin: 20px 0;
+
+                            iframe {
                                 width: 100%;
-                                margin: 20px 0;
-
-                                iframe {
-                                    width: 100%;
-                                    height: 100%;
-                                }
+                                height: 100%;
                             }
+                        }
 
-                            .pdf-file {
-                                width: 55%;
-                                margin-left: auto;
-                                margin-right: auto;
-                                .pdf-item {
-                                    margin: 20px 0;
-                                    display: flex;
-                                    align-items: center;
+                        .pdf-file {
+                            width: 55%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            .pdf-item {
+                                margin: 20px 0;
+                                display: flex;
+                                align-items: center;
 
-                                    img {
-                                        margin-right: 15px;
-                                    }
+                                img {
+                                    margin-right: 15px;
+                                }
 
-                                    a {
-                                        font-size: 146x;
-                                        color: #ff6600;
-                                        text-decoration: underline;
-                                    }
+                                a {
+                                    font-size: 146x;
+                                    color: #ff6600;
+                                    text-decoration: underline;
                                 }
                             }
                         }

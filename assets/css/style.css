@@ -445,13 +445,24 @@ footer {
     .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card .card-body__content .text p {
       font-size: 15px; }
 
+.page--mastery-certification .section--side-bar .training-header {
+  font-size: 24px !important;
+  border-bottom: 2px solid #e46021;
+  font-weight: 200 !important; }
+
+.page--mastery-certification .section--side-bar .row {
+  margin-left: unset;
+  margin-right: unset; }
+
 .page--mastery-certification .section--side-bar .sidebar {
   width: 400px;
-  background-color: #e0e0e0;
+  background-color: #e7e7e7;
   padding: 20px 0;
   position: fixed;
   height: 100%;
-  max-height: 400px; }
+  max-height: 400px;
+  padding-right: auto;
+  padding-left: auto; }
   .page--mastery-certification .section--side-bar .sidebar .intro {
     border-top: solid 2px #ff6600;
     border-bottom: solid 2px #ff6600; }
@@ -460,57 +471,110 @@ footer {
     font-size: 1.25rem;
     font-weight: 600;
     text-decoration: none; }
-  .page--mastery-certification .section--side-bar .sidebar .section .dropdown {
-    margin-top: 10px;
-    padding: 10px;
-    cursor: pointer;
-    position: relative; }
-    .page--mastery-certification .section--side-bar .sidebar .section .dropdown button {
-      width: 100%;
-      text-align: left;
-      font-weight: 500;
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer; }
-      .page--mastery-certification .section--side-bar .sidebar .section .dropdown button #icon1 {
-        margin-left: 3rem; }
-    .page--mastery-certification .section--side-bar .sidebar .section .dropdown .dropdown-content {
-      display: none;
-      background-color: #f7f7f7;
+  .page--mastery-certification .section--side-bar .sidebar .section {
+    overflow-y: auto; }
+    .page--mastery-certification .section--side-bar .sidebar .section .dropdown {
+      margin-top: 10px;
       padding: 10px;
-      border: 1px solid #000;
-      border-top: none; }
-      .page--mastery-certification .section--side-bar .sidebar .section .dropdown .dropdown-content div {
-        padding: 5px 0; }
-
-.page--mastery-certification .section--mastery-body {
-  margin-left: 25rem; }
-  .page--mastery-certification .section--mastery-body .wrapper .master-body__content {
-    margin: 50px 0; }
-    .page--mastery-certification .section--mastery-body .wrapper .master-body__content h1 {
-      text-align: center;
-      font-weight: 600; }
-    .page--mastery-certification .section--mastery-body .wrapper .master-body__content .card .card-body h5 {
-      text-align: center; }
-    .page--mastery-certification .section--mastery-body .wrapper .master-body__content .card .card-body .video-container {
-      height: 500px;
-      width: 100%;
-      margin: 20px 0; }
-      .page--mastery-certification .section--mastery-body .wrapper .master-body__content .card .card-body .video-container iframe {
+      cursor: pointer;
+      position: relative; }
+      .page--mastery-certification .section--side-bar .sidebar .section .dropdown button {
         width: 100%;
-        height: 100%; }
-    .page--mastery-certification .section--mastery-body .wrapper .master-body__content .card .card-body .pdf-file {
-      width: 55%;
-      margin-left: auto;
-      margin-right: auto; }
-      .page--mastery-certification .section--mastery-body .wrapper .master-body__content .card .card-body .pdf-file .pdf-item {
-        margin: 20px 0;
-        display: flex;
-        align-items: center; }
-        .page--mastery-certification .section--mastery-body .wrapper .master-body__content .card .card-body .pdf-file .pdf-item img {
-          margin-right: 15px; }
-        .page--mastery-certification .section--mastery-body .wrapper .master-body__content .card .card-body .pdf-file .pdf-item a {
-          font-size: 146x;
-          color: #ff6600;
-          text-decoration: underline; }
+        text-align: left;
+        font-weight: 500;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer; }
+        .page--mastery-certification .section--side-bar .sidebar .section .dropdown button #icon1 {
+          margin-left: 3rem; }
+      .page--mastery-certification .section--side-bar .sidebar .section .dropdown .dropdown-content {
+        display: none;
+        background-color: #f7f7f7;
+        padding: 10px;
+        border: 1px solid #000;
+        border-top: none; }
+        .page--mastery-certification .section--side-bar .sidebar .section .dropdown .dropdown-content div {
+          padding: 5px 0; }
+
+.page--mastery-certification .section--side-bar .sidebar-accordion--listing {
+  background-color: #e7e7e7;
+  height: 100vh;
+  overflow-y: auto;
+  border-bottom: 1px solid #e46021;
+  /* Rotate icon when collapse is shown */ }
+  .page--mastery-certification .section--side-bar .sidebar-accordion--listing .rotate-icon {
+    transition: transform 0.3s ease; }
+  .page--mastery-certification .section--side-bar .sidebar-accordion--listing .rotate-icon.rotate {
+    transform: rotate(180deg); }
+  .page--mastery-certification .section--side-bar .sidebar-accordion--listing .card .card-header {
+    padding: unset; }
+  .page--mastery-certification .section--side-bar .sidebar-accordion--listing .card .card-body {
+    padding: unset !important;
+    background-color: #dbdbdb;
+    transition: 50ms all linear; }
+  .page--mastery-certification .section--side-bar .sidebar-accordion--listing ul {
+    margin-bottom: unset; }
+    .page--mastery-certification .section--side-bar .sidebar-accordion--listing ul li a {
+      color: #212529 !important;
+      text-decoration: none !important;
+      display: block;
+      padding: 20px 25px;
+      transition: 100ms all linear;
+      font-weight: 400 !important;
+      font-size: 1rem; }
+      .page--mastery-certification .section--side-bar .sidebar-accordion--listing ul li a:hover {
+        color: #fff !important;
+        background-color: rgba(228, 96, 33, 0.8); }
+      .page--mastery-certification .section--side-bar .sidebar-accordion--listing ul li a:focus {
+        color: #fff !important;
+        background-color: rgba(228, 96, 33, 0.8); }
+  .page--mastery-certification .section--side-bar .sidebar-accordion--listing .btn {
+    border: unset;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #e7e7e7 !important;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    text-decoration: none; }
+    .page--mastery-certification .section--side-bar .sidebar-accordion--listing .btn:hover {
+      border-bottom: unset; }
+    .page--mastery-certification .section--side-bar .sidebar-accordion--listing .btn .collapsed {
+      border-radius: 0; }
+
+.page--mastery-certification .wrapper .master-body__content {
+  margin: 50px 0; }
+  .page--mastery-certification .wrapper .master-body__content h1 {
+    text-align: center;
+    font-weight: 600; }
+  .page--mastery-certification .wrapper .master-body__content .card .card-body h5 {
+    text-align: center; }
+  .page--mastery-certification .wrapper .master-body__content .card .card-body .video-container {
+    height: 500px;
+    width: 100%;
+    margin: 20px 0; }
+    .page--mastery-certification .wrapper .master-body__content .card .card-body .video-container iframe {
+      width: 100%;
+      height: 100%; }
+  .page--mastery-certification .wrapper .master-body__content .card .card-body .pdf-file {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto; }
+    .page--mastery-certification .wrapper .master-body__content .card .card-body .pdf-file .pdf-item {
+      margin: 20px 0;
+      display: flex;
+      align-items: center; }
+      .page--mastery-certification .wrapper .master-body__content .card .card-body .pdf-file .pdf-item img {
+        margin-right: 15px; }
+      .page--mastery-certification .wrapper .master-body__content .card .card-body .pdf-file .pdf-item a {
+        font-size: 146x;
+        color: #ff6600;
+        text-decoration: underline; }
