@@ -140,6 +140,9 @@ header {
         header .right .btn {
           font-size: 14px; } }
 
+.header--desktop {
+  padding: 15px 0; }
+
 .header--mobile {
   background-color: #ffffff;
   box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.3); }
@@ -315,19 +318,38 @@ header {
     padding: 8px 15px; } }
 
 footer {
-  background-color: yellow; }
+  color: #FFFFFF;
+  background-color: #202A44;
+  padding: 10px 0; }
   footer .wrapper {
     max-width: 100%; }
-    footer .wrapper .row .col-md-3 .image-logo {
-      width: 300px; }
-      footer .wrapper .row .col-md-3 .image-logo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    footer .wrapper .row .col-md-6 .text {
-      text-align: center; }
-      footer .wrapper .row .col-md-6 .text .d-flex {
-        justify-content: center; }
+    footer .wrapper .row {
+      align-items: center; }
+      footer .wrapper .row .col-md-3 .image-logo {
+        width: 250px; }
+        footer .wrapper .row .col-md-3 .image-logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      footer .wrapper .row .col-md-3 .social-accounts {
+        display: flex;
+        justify-content: end; }
+        footer .wrapper .row .col-md-3 .social-accounts .image {
+          margin: 0 10px; }
+      footer .wrapper .row .col-md-6 .text {
+        text-align: center; }
+        footer .wrapper .row .col-md-6 .text p {
+          margin-bottom: 0;
+          padding: 5px 0;
+          font-size: 15px; }
+          footer .wrapper .row .col-md-6 .text p span {
+            color: #1BA098; }
+        footer .wrapper .row .col-md-6 .text .d-flex {
+          justify-content: center; }
+          footer .wrapper .row .col-md-6 .text .d-flex a {
+            color: #FFFFFF;
+            margin: 0 10px;
+            font-size: 15px; }
 
 .page--home .section-faq .faq .faq-item {
   border-bottom: 1px solid #ccc;
@@ -365,7 +387,7 @@ footer {
     height: 100%; }
     .page--mm-certification .section--mmcertification-header .bg-certification .overlay {
       background-color: rgba(0, 27, 55, 0.85);
-      position: absolute; }
+      height: 500px; }
     .page--mm-certification .section--mmcertification-header .bg-certification .wrapper {
       height: 100% !important; }
       .page--mm-certification .section--mmcertification-header .bg-certification .wrapper .mmcertification__content {
@@ -378,7 +400,8 @@ footer {
           color: #FFFFFF; }
           .page--mm-certification .section--mmcertification-header .bg-certification .wrapper .mmcertification__content .text-container h1 {
             font-size: 42px;
-            font-weight: bold; }
+            font-weight: bold;
+            letter-spacing: -1px; }
           .page--mm-certification .section--mmcertification-header .bg-certification .wrapper .mmcertification__content .text-container p {
             font-size: 21px; }
 
@@ -390,7 +413,12 @@ footer {
     display: flex;
     justify-content: center;
     max-width: 800px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    color: #FFFFFF; }
+    .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production h4 {
+      margin-bottom: 0;
+      font-size: 21px;
+      padding: 10px; }
     .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production .production-item {
       padding: 5px;
       width: 220px; }
@@ -399,22 +427,33 @@ footer {
         object-fit: cover;
         height: 100%; }
       .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production .production-item .production-overview {
-        position: absolute;
-        top: 80px;
+        position: relative;
+        top: -110px;
         text-align: center;
         width: 210px;
-        background-color: red; }
+        background-color: #ff6600;
+        opacity: 0.8; }
       .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production .production-item .production-training {
-        position: absolute;
-        top: 80px;
+        position: relative;
+        top: -110px;
+        text-align: center;
+        width: 210px;
+        background-color: #ff6600;
+        opacity: 0.8; }
+      .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production .production-item .production-office {
+        position: relative;
+        top: -110px;
+        text-align: center;
+        width: 210px;
+        background-color: #ff6600;
+        opacity: 0.8; }
+      .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production .production-item .production-books {
         text-align: center;
         width: 210px;
         background-color: red; }
-      .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production .production-item .production-office {
-        position: absolute;
-        top: 80px;
+      .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-8 .production .production-item .production-support {
         text-align: center;
-        width: 210px;
+        width: 190px;
         background-color: red; }
   .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.1);
@@ -422,21 +461,32 @@ footer {
     position: relative;
     left: -3rem;
     margin-left: -1rem;
-    background-color: #d3d3d3;
-    border: none; }
+    background-color: #e7e7e7;
+    border: none;
+    margin: 10px 0; }
+    @media (max-width: 1080px) {
+      .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card {
+        margin-left: 0;
+        left: 0; } }
     .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card .card-body__content .image {
-      width: 250px;
+      max-width: 250px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 30px; }
+      margin-bottom: 40px; }
+      .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card .card-body__content .image img {
+        width: 100%;
+        object-fit: cover; }
     .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card .card-body__content .our-trainer {
       display: flex;
       align-items: center;
       justify-content: space-between; }
       .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card .card-body__content .our-trainer .trainer h4 {
         font-size: 125%;
-        margin-bottom: 5px; }
+        margin-bottom: 2px;
+        letter-spacing: -1px;
+        font-weight: 500; }
       .page--mm-certification .section--mmcertification-overview .wrapper .certification-overview__content .row .col-md-4 .card .card-body__content .our-trainer .trainer h6 {
+        letter-spacing: -1px;
         color: #ff6600;
         font-size: 18px;
         font-weight: 400; }
