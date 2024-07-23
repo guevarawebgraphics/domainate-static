@@ -1,0 +1,43 @@
+.page--home {
+    .section-faq {
+        .faq {
+
+            .faq-item {
+                border-bottom: 1px solid #ccc;
+                padding: 10px 0;
+
+                .faq-question {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-weight: bold;
+
+                    .faq-toggle {
+                        margin-right: 10px;
+                    }
+                }
+
+                .faq-answer {
+                    display: none;
+                    padding: 10px 0;
+
+                    .video-container {
+                        position: relative;
+                        width: 100%;
+                        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                        height: 0;
+
+                        iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

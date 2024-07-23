@@ -76,50 +76,61 @@
     <div class="body-wrapper ">
 
         <!-- Header Desktop -->
-        <header class="header header--desktop">
+        <!-- <header class="header header--desktop">
             <div class="wrapper">
                 <div class="row align-items-center">
                     <div class="left col-2">
                         <a href="#">
-                            <img src="images/black-logo.png" alt="Logo">
+                            <img src="images/dominate-logo.png" alt="Logo">
                         </a>
                     </div>
-                    <div class="center col-6 text-center">
+                    <div class="center col-10 text-center">
                         <nav class="main-navigation">
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html">Programs</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html">About Us</a>
+                                    <a href="about-us.html">Dashboard</a>
                                 </li>
                                 <li>
-                                    <a href="blogs.html">Blogs</a>
+                                    <a href="blogs.html">Getting Started</a>
                                 </li>
                                 <li>
-                                    <a href="pricing.html">Pricing</a>
+                                    <a href="pricing.html">Daily Forms</a>
+                                </li>
+                                <li>
+                                    <a href="pricing.html">Schedule</a>
+                                </li>
+                                <li>
+                                    <a href="pricing.html">Recordings</a>
+                                </li>
+                                <li>
+                                    <a href="pricing.html">Support</a>
+                                </li>
+                                <li>
+                                    <a href="pricing.html">Logout</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="right col-4">
-                        <a href="#" class="btn btn--primary">Login / Register</a>
-                        <a href="contact.html" class="btn btn--secondary">Contact Us</a>
-                    </div>
                 </div>
             </div>
-        </header>
+        </header> -->
 
         <!-- Header Mpbile -->
         <header class="header--mobile">
             <div class="wrapper">
                 <div class="row align-items-center">
-                    <div class="col-4 text-left">
+                    <div class="col-3 text-left">
                         <a href="#">
                             <img src="images/black-logo.png" alt="Logo">
                         </a>
                     </div>
-                    <div class="col-8 text-right">
+                    <div class="col-md-6 text-mid">
+                        <h1>ProfitMancer Money Mastery Certification</h1>
+                    </div>
+                    <div class="col-3 text-right">
                         <a href="#" class="hamburger">
                             <div></div>
                         </a>
@@ -148,99 +159,115 @@
                     </div>
                 </div>
             </div>
+        </header>
+        
     </div>
 
     <!-- Main Content -->
-    <main class="main-content page--home">
-
-        <section class="section-faq">     
-            <div class="faq">
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer(this)">
-                        <span class="faq-toggle">+</span> What is the return policy?
-                    </div>
-                    <div class="faq-answer">
-                        Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we can’t offer you a refund or exchange.
+    <main class="main-content page--mastery-certification">
+        
+      <section class="section--side-bar">
+        <div class="sidebar">
+            <h2>Overview</h2>
+            <div class="section">
+                <h3>Introduction</h3>
+                <div class="dropdown" onclick="toggleDropdown('dropdown1', 'icon1')">
+                    <button>
+                        Goals: Mindset & Business Foundation 
+                        <i id="icon1" class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="dropdown1" class="dropdown-content">
+                        <div class="active">Welcome to the Big Leagues: Setting Goals Like a Boss</div>
+                        <div>Kicking Self-Sabotage to the Curb</div>
+                        <div>Mindset Gymnastics: Flexing Your Entrepreneurial Brain</div>
+                        <div>Idea Validation: Separating Wheat from Chaff</div>
+                        <div>Crafting Your Biz’s Mission: More Than Just Fancy Words</div>
+                        <div>Carving Out Your Financial Destiny: Goal-Setting Galore</div>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleAnswer(this)">
-                     How do I track my order? <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="video-container">
-                            <iframe src="https://player.vimeo.com/video/923291819?" frameborder="0"></iframe>
+            </div>
+        </div>
+      </section>
+
+        <section class="section--mastery-body">
+            <div class="wrapper">
+                    <div class="master-body__content">
+                        <h1>Welcome to the Big Leagues: Setting Goals Like a Boss</h1>
+                        <!-- CARD 1 -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Core</h5>
+                                <!-- video section -->
+                                <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/923291819?" frameborder="0"></iframe>
+                                </div>
+                                <h5>Right-click and click "Save As" to download the files below:</h5>
+                                <div class="pdf-file">
+                                    <div class="pdf-item">
+                                        <img src="images/pdf-image.png" alt="">
+                                        <a href="#">Audio Core Welcome to the Big Leagues: Setting Goals Like a Boss</a>
+                                    </div>
+                                    <div class="pdf-item">
+                                        <img src="images/pdf-image.png" alt="">
+                                        <a href="#">Transcript Core Welcome to the Big Leagues: Setting Goals Like a Boss</a>
+                                    </div>
+                                    <div class="pdf-item">
+                                        <img src="images/pdf-image.png" alt="">
+                                        <a href="#">Worksheet Core Welcome to the Big Leagues: Setting Goals Like a Boss</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 2 -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Certification</h5>
+                                  <!-- video section -->
+                                  <div class="video-container">
+                                    <iframe src="https://player.vimeo.com/video/923291819?" frameborder="0"></iframe>
+                                </div>
+                                <h5>Right-click and click "Save As" to download the files below:</h5>
+                                <div class="pdf-file">
+                                    <div class="pdf-item">
+                                        <img src="images/pdf-image.png" alt="">
+                                        <a href="#">Audio Certification Welcome to the Big Leagues: Setting Goals Like a Boss</a>
+                                    </div>
+                                    <div class="pdf-item">
+                                        <img src="images/pdf-image.png" alt="">
+                                        <a href="#">Transcript Certification Welcome to the Big Leagues: Setting Goals Like a Boss</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Add more FAQ items as needed -->
             </div>
         </section>
-
+        
     </main>
 
     <!-- Main Footer -->
     <footer class="main-footer text-center">
-        <!-- <a href="#" id="back-to-top">Back to Top</a> -->
         <div class="wrapper">
             <div class="row">
-                <div class="left col-2">
-                    <h2>Navigation</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Jobs</a>
-                        </li>
-                        <li>
-                            <a href="#">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="#">Pricing</a>
-                        </li>
-                    </ul>
+                <div class="col-md-3">
+                    <div class="image-logo">
+                        <img src="images/dominate-logo.png" alt="">
+                    </div>
                 </div>
-                <div class="center col-8">
-                    <h3><span>No Great Man in History</span> Became Exceptional Alone</h3>
-                    <a href="https://www.trustpilot.com/review/recruitdrip.com" target="_blank">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://www.g2.com/products/portman-holdings-llc-recruitdrip/reviews" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <div class="space"></div>
-                    <a href="#">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    </ul>
+                <div class="col-md-6">
+                    <div class="text">
+                        <p>© 2024 Your Next Stage, a subsidiary of <span>Venture Asset Group</span>.All Rights Reserved. Designed By <span>Frontspace</span>.</p>
+                        <div class="d-flex">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="right col-2">
-                    <h2>Social Media</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="#">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="#">Youtube</a>
-                        </li>
-                        <li>
-                            <a href="#">LinkedIn</a>
-                        </li>
-                    </ul>
+                <div class="col-md-3">
+                    <div class="social-accounts">
+                     
+                    </div>
                 </div>
-            </div>
-            <div class="disclaimer ">
-                <p>© 2023 Guevara Web Graphics Studio, Inc. All rights reserved</p>
             </div>
         </div>
     </footer>
@@ -258,32 +285,20 @@
     <script src="assets/js/custom.js"></script>
     <script src="script.js"></script>
 
-
-
     <script>
-
-        let activeAnswer = null;
-
-        function toggleAnswer(element) {
-            const answer = element.nextElementSibling;
-            const toggle = element.querySelector('.faq-toggle');
-            
-            if (activeAnswer && activeAnswer !== answer) {
-                activeAnswer.style.display = 'none';
-                activeAnswer.previousElementSibling.querySelector('.faq-toggle').textContent = '+';
-            }
-            
-            if (answer.style.display === 'none' || answer.style.display === '') {
-                answer.style.display = 'block';
-                toggle.textContent = '-';
-                activeAnswer = answer;
+        function toggleDropdown(dropdownId, iconId) {
+            var content = document.getElementById(dropdownId);
+            var icon = document.getElementById(iconId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
             } else {
-                answer.style.display = 'none';
-                toggle.textContent = '+';
-                activeAnswer = null;
+                content.style.display = "none";
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
             }
         }
-
     </script>
 
 </body>
