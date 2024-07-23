@@ -2,6 +2,12 @@ footer {
     color: #FFFFFF;
     background-color: #202A44;
     padding: 10px 0;
+    position: relative;
+    z-index: 99;
+
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
 
     
     .wrapper {
@@ -24,6 +30,10 @@ footer {
                     display: flex;
                     justify-content: end;
 
+                    @media (max-width: 767px) {
+                        justify-content: start;
+                    }
+
                     .image {
                         margin: 0 10px;
                     }
@@ -34,6 +44,11 @@ footer {
             .col-md-6 { 
                  .text {
                     text-align: center;
+
+                    @media (max-width: 767px) {
+                        text-align: start;
+                        padding: 20px 0;
+                    }
 
                     p {
                         margin-bottom: 0;
@@ -47,7 +62,10 @@ footer {
                     }
 
                     .d-flex {
-                        justify-content: center;
+                        justify-content: center;   
+                        @media (max-width: 767px) {
+                            justify-content: start;
+                        }
                         
                         a {
                             color: #FFFFFF;

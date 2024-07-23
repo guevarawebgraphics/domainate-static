@@ -7,6 +7,7 @@
             font-size: 24px !important ;
             border-bottom: 2px solid #e46021;
             font-weight:200 !important;
+            margin-left: 15px!important;
         }
 
         .row {
@@ -25,6 +26,14 @@
             padding-right:auto;
             padding-left:auto;
 
+            @media (max-width: 767px) {
+                position: relative;
+                max-height: 100%;
+                width: 100%;
+                padding: 15px;
+            
+            }
+
             .intro {
                 border-top: solid 2px #ff6600;
                 border-bottom: solid 2px #ff6600;
@@ -39,6 +48,7 @@
 
             .section {
                 overflow-y: auto;
+                margin-left: 9px;
                 .dropdown {
                     margin-top: 10px;
                     padding: 10px;
@@ -94,6 +104,7 @@
 
 
             .card {
+           
                 .card-header {
                     padding: unset;
                 }
@@ -138,6 +149,7 @@
                 position: relative;
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 width: 100%;
                 padding: 1rem 1.25rem;
                 font-size: 1rem;
@@ -175,17 +187,48 @@
                 h1 {
                     text-align: center;
                     font-weight: 600;
+
+                    @media (max-width:767px) {
+                        font-size: 32px;
+                    }
+
+                    @media (max-width: 568px) {
+                        font-size: 27px;
+                    }
                 }
                 .card {
+                    border-radius: 10px;
+                    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.1);
+                    margin: 20px 0;
                     .card-body {
                         h5 {
                             text-align: center;
+                        }
+
+                        .bold {
+                            font-weight: bold;
                         }
 
                         .video-container {
                             height: 500px;
                             width: 100%;
                             margin: 20px 0;
+                            
+                            @media (max-width: 1745px) {
+                                height: 350px;
+                            }
+
+                            @media (max-width: 1400px) {
+                                height: 300px;
+                            }
+
+                            @media (max-width: 767px) {
+                                height: 390px;
+                            }
+
+                            @media (max-width: 568px) {
+                                height: 240px;
+                            }
 
                             iframe {
                                 width: 100%;
@@ -194,7 +237,7 @@
                         }
 
                         .pdf-file {
-                            width: 55%;
+                            width: 65%;
                             margin-left: auto;
                             margin-right: auto;
                             .pdf-item {
@@ -207,8 +250,9 @@
                                 }
 
                                 a {
-                                    font-size: 146x;
+                                    font-size: 15px;
                                     color: #ff6600;
+                                    font-weight: 600;
                                     text-decoration: underline;
                                 }
                             }

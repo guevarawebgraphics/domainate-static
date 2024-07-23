@@ -11,9 +11,8 @@
             height: 100%;
             
             .overlay {
-                background-color: rgba(0, 27, 55, 0.85);
-                // position: absolute;
-                height: 500px;
+                // background-color: rgba(0, 27, 55, 0.85);
+                // height: 500px;
             }
             .wrapper {
                 height: 100%!important;
@@ -28,6 +27,10 @@
                                 width: 50%;
                                 margin-left: auto;
                                 color: #FFFFFF;
+
+                                @media (max-width: 768px) {
+                                    width: 100%;
+                                }
 
                                 h1 {
                                     font-size: 42px;
@@ -54,6 +57,11 @@
             .certification-overview__content {
                 margin-top: 60px;
                 margin-bottom: 150px;
+
+                @media (max-width: 767px) {
+                    margin-bottom: 80px;
+                }
+
                 .row {
                     .col-md-8 {
                         .production {
@@ -64,6 +72,16 @@
                             flex-wrap: wrap;
                             color: #FFFFFF;
 
+                            @media (max-width: 767px) {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                            }
+
+                            @media (max-width: 420px) {
+                                display: grid;
+                                grid-template-columns: 1fr ;
+                            }
+
                             h4 {
                                 margin-bottom: 0;
                                 font-size: 21px;
@@ -73,6 +91,11 @@
                             .production-item {
                                 padding: 5px;
                                 width: 220px;
+                                
+                                @media (max-width: 767px) {
+                                    width: 100%;
+                                }
+
                                 img {
                                     width: 100%;
                                     object-fit: cover;
@@ -81,16 +104,7 @@
 
 
 
-                                .production-overview {
-                                    position: relative;
-                                    top: -110px;
-                                    text-align: center;
-                                    width: 210px;
-                                    background-color: #ff6600;
-                                    opacity: 0.8;
-                                    
-                                }
-                                .production-training {
+                                .production-box {
                                     position: relative;
                                     top: -110px;
                                     text-align: center;
@@ -98,30 +112,9 @@
                                     background-color: #ff6600;
                                     opacity: 0.8;
 
-                    
-                                    
-                                }
-                                .production-office {
-                                    position: relative;
-                                    top: -110px;
-                                    text-align: center;
-                                    width: 210px;
-                                    background-color: #ff6600;
-                                    opacity: 0.8;
-                                    
-                                }
-                                .production-books {
-                               
-                                    text-align: center;
-                                    width: 210px;
-                                    background-color: red;
-                                    
-                                }
-                                .production-support {
-                            
-                                    text-align: center;
-                                    width: 190px;
-                                    background-color: red;
+                                    @media (max-width: 767px) {
+                                        width: 100%;
+                                    }
                                     
                                 }
                             }
