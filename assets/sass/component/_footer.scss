@@ -1,12 +1,13 @@
 footer {
     color: #FFFFFF;
     background-color: #202A44;
-    padding: 10px 0;
+    padding: 15px 0;
     position: relative;
     z-index: 99;
-
-    @media (max-width: 767px) {
+    
+    @media (max-width: 769px) {
         padding: 40px 0;
+        line-height: 40px;
     }
 
     
@@ -17,7 +18,12 @@ footer {
             .col-md-3 {
 
                 .image-logo {
-                    width: 250px;
+                    max-width: 250px;
+                    
+                    @media (max-width: 769px) {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
 
                     img {
                         width: 100%;
@@ -30,8 +36,8 @@ footer {
                     display: flex;
                     justify-content: end;
 
-                    @media (max-width: 767px) {
-                        justify-content: start;
+                    @media (max-width: 769px) {
+                        justify-content: center;
                     }
 
                     .image {
@@ -45,10 +51,10 @@ footer {
                  .text {
                     text-align: center;
 
-                    @media (max-width: 767px) {
-                        text-align: start;
-                        padding: 20px 0;
-                    }
+                    // @media (max-width: 767px) {
+                    //     text-align: start;
+                    //     padding: 20px 0;
+                    // }
 
                     p {
                         margin-bottom: 0;
@@ -63,14 +69,20 @@ footer {
 
                     .d-flex {
                         justify-content: center;   
-                        @media (max-width: 767px) {
-                            justify-content: start;
-                        }
+                        // @media (max-width: 767px) {
+                        //     justify-content: start;
+                        //     margin-top: 1.75rem;
+                        // }
                         
                         a {
                             color: #FFFFFF;
                             margin: 0 10px;
                             font-size: 15px;
+
+                            @media (max-width: 766px) {
+                                margin: 0;
+                                margin-right: 10px;
+                            }
                         }
                     }
                 }

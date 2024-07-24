@@ -1,39 +1,173 @@
 .page--home {
     .section-faq {
-        .faq {
+            margin: 30px 0;
+        .wrapper {
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .card {
+                width: 100%;
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.1);
 
-            .faq-item {
-                border-bottom: 1px solid #ccc;
-                padding: 10px 0;
+                .card-body {
+                    padding: 40px 50px;
+                    text-align: center;
 
-                .faq-question {
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    font-weight: bold;
-
-                    .faq-toggle {
-                        margin-right: 10px;
+                    @media (max-width: 567px) {
+                        padding: 25px!important;
+                        text-align: start;
                     }
-                }
 
-                .faq-answer {
-                    display: none;
-                    padding: 10px 0;
+                    .text {
+                        margin-bottom: 30px;
 
-                    .video-container {
-                        position: relative;
-                        width: 100%;
-                        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-                        height: 0;
+                        p {
+                            font-size: 18px;
+                            line-height: 22px;
+                            
+                            a {
+                                color: #ff6600;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    
+                    .faq {
+                        border-radius: 20px;
+                        border-top-right-radius: 20px;
 
-                        iframe {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
+                        .faq-title {
+                            text-align: center;
+                            background-color: #ff6600;
+                            padding: 20px;
+                            border-top-left-radius: 20px;
+                            border-top-right-radius: 20px;
+                            
+                            h1 {
+                                font-size: 23px;
+                                margin-bottom: 0;
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        .faq-item {
+                            border-bottom: 1px solid #ccc;
+                            padding: 10px 0;
+                            background-color: #e0e0e0;
+            
+                            .faq-question {
+                                cursor: pointer;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                font-weight: bold;
+                                font-size: 20px;
+                                padding: 5px 20px;
+            
+                                .faq-toggle {
+                                    margin-right: 10px;
+                                    
+
+                                }
+                            }
+            
+                            .faq-answer {
+                                display: none;
+                                padding: 10px 0;
+                                background: #FFFFFF;
+                                padding: 25px;
+
+                                @media (max-width: 568px) {
+                                    padding: 10px;
+                                }
+            
+                                .video-container {
+                                    position: relative;
+                                    width: 100%;
+                                    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                                    height: 0;
+            
+                                    iframe {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .radius {
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+                    }
+
+                    .form {
+                        margin-top: 3rem;
+                        .card-body {
+                            padding: 40px 55px;
+
+                            @media (max-width: 568px) {
+                                padding: 30px;
+                                font-size: 21px;
+                                text-align: start;
+                            }
+
+                            h1 {
+                                font-size: 28px;
+                                margin-bottom: 10px;
+                                font-weight: 700;
+                                line-height: 30px;
+
+                                @media (max-width: 568px) {
+                                    text-align: start;
+                                    font-size: 23px;
+                                }
+                            }
+
+                            h4 {
+                                margin-bottom: 25px;
+                                font-weight: 700;
+
+                                @media (max-width: 568px) {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .mb-3 {
+                                text-align: left;
+
+                                input {
+                                    border-radius: 0;
+                                    padding: 25px 10px;
+                                    font-size: 18px;
+                                }
+                                
+                                .message {
+                                    font-size: 18px;
+                                    max-height: 140px;
+                                    min-height: 140px;
+                                    padding: 10px;
+                                }
+                            }
+
+                            .btn-submit {
+                                width: 100%;
+                                background-color: #ff6600;
+                                padding: 15px;
+                                font-size: 18px;
+                                border-radius: 10px;
+                                color: #FFFFFF;
+                            }
                         }
                     }
                 }
